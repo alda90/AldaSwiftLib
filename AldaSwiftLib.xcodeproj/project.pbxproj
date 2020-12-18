@@ -16,6 +16,7 @@
 		CFCC1615258D6AC6006B8DDB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCC1613258D6AC6006B8DDB /* Main.storyboard */; };
 		CFCC1617258D6ACA006B8DDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFCC1616258D6ACA006B8DDB /* Assets.xcassets */; };
 		CFCC161A258D6ACA006B8DDB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFCC1618258D6ACA006B8DDB /* LaunchScreen.storyboard */; };
+		CFCC162E258D6F8A006B8DDB /* AldaSwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFCC162D258D6F8A006B8DDB /* AldaSwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		CFCC1616258D6ACA006B8DDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFCC1619258D6ACA006B8DDB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFCC161B258D6ACA006B8DDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CFCC162D258D6F8A006B8DDB /* AldaSwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AldaSwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				CFCC15F0258D69F5006B8DDB /* AldaSwiftLib.h */,
 				CFCC15F1258D69F5006B8DDB /* Info.plist */,
+				CFCC162D258D6F8A006B8DDB /* AldaSwiftLib.swift */,
 			);
 			path = AldaSwiftLib;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				TargetAttributes = {
 					CFCC15EC258D69F5006B8DDB = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 					CFCC15F5258D69F5006B8DDB = {
 						CreatedOnToolsVersion = 11.6;
@@ -263,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFCC162E258D6F8A006B8DDB /* AldaSwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 		CFCC1602258D69F5006B8DDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ3KUQBS6U;
@@ -453,6 +459,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = aridea.AldaSwiftLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -461,6 +468,7 @@
 		CFCC1603258D69F5006B8DDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = VJ3KUQBS6U;
@@ -485,6 +493,7 @@
 		CFCC1605258D69F5006B8DDB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJ3KUQBS6U;
 				INFOPLIST_FILE = AldaSwiftLibTests/Info.plist;
@@ -503,6 +512,7 @@
 		CFCC1606258D69F5006B8DDB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VJ3KUQBS6U;
 				INFOPLIST_FILE = AldaSwiftLibTests/Info.plist;
